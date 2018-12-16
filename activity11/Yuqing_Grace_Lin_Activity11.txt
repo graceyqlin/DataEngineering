@@ -1,0 +1,44 @@
+  471  mkdir ~/w205/full-stack/
+  472  cd ~/w205/full-stack
+  473  cp ~/w205/course-content/12-Querying-Data-II/docker-compose.yml .
+  474  cp ~/w205/course-content/12-Querying-Data-II/*.py .
+  475  ls
+  476  vi docker-compose.yml
+  477  nano docker-compose.yml
+  478  docker-compose up -d
+  479  docker-compose up
+  480  nano docker-compose.yml
+  481  docker-compose up -d
+  482  nano docker-compose.yml
+  483  docker-compose up -d
+  484  nano docker-compose.yml
+  485  docker-compose up -d
+  486  docker rm -f(docker ps -aq)
+  487  docker rm -f $(docker ps -aq)
+  488  docker ps
+  489  docker-compose up -d
+  490  nano docker-compose.yml
+  491  docker-compose up -d
+  492  docker-compose exec kafka kafka-topics --create --topic events --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  493  docker-compose exec mids env FLASK_APP=/w205/full-stack/game_api.py flask run --host 0.0.0.0
+  494  cd w205/full-stack/
+  495  docker-compose exec mids kafkacat -C -b kafka:29092 -t events -o beginning
+  496  cd ~/w205/spark-from-files/
+  497  cp ~/w205/course-content/11-Storing-Data-III/docker-compose.yml .
+  498  vi docker-compose.yml
+  499  nano docker-compose.yml
+  500  ls
+  501  docker-compose up -d
+  502  nano docker-compose.yml
+  503  docker-compose up -d
+  504  cd ~/w205/spark-from-files/
+  505  docker-compose logs -f kafka
+  506  docker-compose exec mids curl http://localhost:5000/
+  507  docker-compose exec mids curl http://localhost:5000/purchase_a_sword
+  508  docker-compose exec mids kafkacat -C -b kafka:29092 -t events -o beginning -e
+  509  ls
+  510  docker-compose exec spark spark-submit /w205/spark-from-files/extract_events.py
+  511  docker-compose exec cloudera hadoop fs -ls /tmp/
+  512  docker-compose exec cloudera hadoop fs -ls /tmp/extracted_events
+  513  docker-compose down
+  514  history

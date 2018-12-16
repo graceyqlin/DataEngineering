@@ -1,0 +1,35 @@
+ 264  docker rm -f $(docker ps -aq)
+  265  ls
+  266  cd w205
+  267  ls
+  268  cd...
+  269  cd..
+  270  cd ..
+  271  docker run -it --rm -v/home/science/w205:/w205 midsw205/base:latest bash
+  272  docker pull confluentinc/cp-zookeeper:latest
+  273  docker pull confluentinc/cp-kafka:latest
+  274  docker pull midsw205/base:latest
+  275  cd ~/w205/flask-with-kafka/
+  276  ls
+  277  cat docker-compose.yml
+  278  docker-compose up -d
+  279  docker-compose exec kafka kafka-topics --create --topic events --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  280  pip install flask
+  281  vi game_api.py
+  282  docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka/game_api.py flask run
+  283  ls
+  284  vi game_api.py
+  285  ls
+  286  nano
+  287  nano new.py
+  288  ls
+  289  rm new1.py
+  290  rm game_api.py
+  291  nano game_api.py
+  292  docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka/game_api.py flask run
+  293  nano game_api.py
+  294  rm game_api.py
+  295  nano game_api.py
+  296  docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka/game_api.py flask run
+  297  docker-compose down
+  298  history

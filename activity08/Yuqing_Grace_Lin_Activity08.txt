@@ -1,0 +1,172 @@
+science@w205s4-crook-9:~$ history
+    1  ls
+    2  ls -al
+    3  clear
+    4  docker ps
+    5  docker pull midsw205/spark-python:0.0.5
+    6  docker pull midsw205/base:latest
+    7  docker images
+    8  ls -l
+    9  docker ps
+   10  clear
+   11  docker-compose --version
+   12  which docker-compose
+   13  docker ps
+   14  docker run -it --rm -v
+   15  echo $HOME
+   16  cd mkdir w205
+   17  cd
+   18  docker --version
+   19  docker ps -a
+   20  mk dir ~/w205/spark-with-kafka
+   21  mkdir ~/w205/spark-with-kafka
+   22  cd ~/w205/spark-with-kafka
+   23  cp ~/w205/course-content/07-Sourcing-Data/docker-compose.yml
+   24  docker-compose up -d
+   25  cp ~/w205/course-content/07-Sourcing-Data/docker-compose.yml
+   26  docker-compose up -d
+   27  cd ~/w205/spark-with-kafka
+   28  cp ~/w205/spark-with-kafka
+   29  ls
+   30  ls w205/
+   31  echo $HOME
+   32  cd mkdir w205
+   33  cd
+   34  mkdir w205
+   35  cd
+   36  docker --version
+   37  docker-compose --version
+   38  docker info
+   39  docker run --rm hello-world
+   40  docker run -it --rm -v /home/science/w205:w205 midsw205/base:latest bash
+   41  docker run -it --rm -v /home/science/w205:/w205 midsw205/base:latest bash
+   42  docker ps
+   43  docker ps -a
+   44  docker rm my_container
+   45  docker rm $(docker ps -aq)
+   46  docker images
+   47  docker-compose exec cloudera hadoop fs -ls /tmp/
+   48  mkdir ~/w205/spark-with-kafka-and-hdfs
+   49  cd ~/w205/spark-with-kafka-and-hdfs
+   50  cp ~/w205/course-content/08-Querying-Data/docker-compose.yml .
+   51  docker-compose up -d
+   52  docker-compose logs -f kafka
+   53  docker rm -f $(docker ps -aq)
+   54  cd ~/course-content
+   55  git pull --all
+   56  docker run -it --rm -v /home/science/w205:/w205 midsw205/base:latest bash
+   57  docker pull confluentinc/cp-zookeeper:latest
+   58  docker pull confluentinc/cp-kafka:latest
+   59  docker pull midsw205/cdh-minimal:latest
+   60  docker pull midsw205/spark-python:0.0.5
+   61  docker pull midsw205/base:latest
+   62  mkdir ~/w205/spark-with-kafka-and-hdfs
+   63  cd ~/w205/spark-with-kafka-and-hdfs
+   64  cp ~/w205/course-content/08-Querying-Data/docker-compose.yml .
+   65  docker-compose up -d
+   66  docker-compose logs -f kafka
+   67  docker-compose exec cloudera hadoop fs -ls /tmp/
+   68  docker-compose exec kafka kafka-topics --create --topic players --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+   69  cd ~/w205/
+   70  curl -L -o players.json https://goo.gl/jSVrAe
+   71  cd ~/w205/spark-with-kafka-and-hdfs
+   72  ls -l
+   73  docker-compose exec mids bash -c "cat /w205/players.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t players"
+   74  docker-compose exec spark pyspark
+   75  mkdir ~/w205/spark-with-kafka
+   76  cd ~/w205/spark-with-kafka
+   77  cp ~/w205/course-content/07-Sourcing-Data/docker-compose.yml
+   78  cp ~/w205/course-content/07-Sourcing-Data/docker-compose.yml .
+   79  docker-compose up -d
+   80  docker-compose logs -f kafka
+   81  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+   82  docker ps
+   83  ls
+   84  cat docker-compose.yml
+   85  docker images
+   86  docker ps
+   87  vi
+   88  vi docker-compose.yml
+   89  docker compose up -d
+   90  docker
+   91  docker ps
+   92  docker-compose up -d
+   93  docker docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+   94  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+   95  docker rm $(docker ps -a -q)
+   96  docker stop $(docker ps)
+   97  docker ps
+   98  docker rm $(docker ps -a -q)
+   99  docker ps
+  100  docker-compose up -d
+  101  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  102  docker ps
+  103  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  104  docker-compose exec kafka kafka-topics --describe --topic foo --zookeeper zookeeper:32181
+  105  docker-compose exec kafka bash -c "seq 42 | kafka-console-producer --request-required-acks 1 --broker-list kafka:29092 --topic foo && echo 'Produced 42 messages.'"
+  106  docker-compose exec spark pyspark
+  107  docker-compose down
+  108  docker-compose ps -a
+  109  cd ~/w205
+  110  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/f5bRm4
+  111  cd ~/w205/spark-with-kafka
+  112  docker-compose up -d
+  113  docker-compose logs -f kafka
+  114  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  115  docker-compose exec spark pyspark
+  116  history
+  117  history >yuqing_grace_lin_history.txt
+  118  cat docker-compose.yml
+  119  docker rm -f $(docker ps -aq)
+  120  docker run -it --rm -v /home/science/w205:/w205 midsw205/base:latest bash
+  121  docker pull confluentinc/cp-zookeeper:latest
+  122  docker pull confluentinc/cp-kafka:latest
+  123  docker pull midsw205/base:latest
+  124  mkdir ~/w205/flask-with-kafka
+  125  cd ~/w205/flask-with-kafka
+  126  vi docker-compose.yml
+  127  ---
+  128  version: '2'
+  129  services:
+  130  vi docker-compose.yml
+  131  ls
+  132  ls -a
+  133  rm .docker-compose.yml.swp
+  134  vi docker-compose.yml
+  135  cd..
+  136  cd ..
+  137  git status
+  138  cd flask-with-kafka/
+  139  docker-compose up -d
+  140  vi docker-compose.yml
+  141  telnet google.com 80
+  142  vi docker-compose.yml
+  143  mkdir ~/w205/spark-with-kafka-and-hdfs
+  144  cd ~/w205/spark-with-kafka-and-hdfs
+  145  science@w205s4-crook-9:~/w205/spark-with-kafka-and-hdfs$
+  146  vi docker-compose.yml
+  147  docker-compose up -d
+  148  docker-compose logs -f kafka
+  149  docker-compose exec cloudera hadoop fs -ls /tmp/
+  150  docker-compose exec kafka kafka-topics --create --topic players --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  151  cd ~/w205/
+  152  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/f5bRm4
+  153  cd ~/w205/spark-with-kafka-and-hdfs
+  154  docker-compose exec mids bash -c "cat /w205/players.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t players"
+  155  docker-compose exec spart pyspark
+  156  docker-compose exec spark pyspark
+  157  docker-compose exec cloudera hadoop fs -ls /tmp/
+  158  docker rm -f $(docker ps -aq)
+  159  docker run -it --rm -v /home/science/w205:/w205 midsw205/base:latest bash
+  160  docker pull confluentinc/cp-zookeeper:latest
+  161  docker pull confluentinc/cp-kafka:latest
+  162  docker pull midsw205/cdh-minimal:latest
+  163  docker pull midsw205/spark-python:0.0.5
+  164  docker pull midsw205/base:latest
+  165  mkdir ~/w205/spark-from-files/
+  166  cd ~/w205/spark-from-files
+  167  ---
+  168  version: '2'
+  169  services:
+  170  vi docker-compose.yml
+  171  history

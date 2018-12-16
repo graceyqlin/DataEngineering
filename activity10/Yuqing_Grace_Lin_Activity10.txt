@@ -1,0 +1,33 @@
+  362  cd flask-with-kafka/
+  363  ls
+  364  docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka/game_api_with_json_events.py flask run --host 0.0.0.0
+  365  cd w205/
+  366  ls
+  367  cd flask-with-kafka/
+  368  ls
+  369  cat game_api_with_json_events.py
+  370  cat docker-compose.yml
+  371  docker rm -f $(docker ps -aq)
+  372  docker run it --rm -v /home/science/w205:/w205 midsw205/base:latest bash
+  373  docker run -it --rm -v /home/science/w205:/w205 midsw205/base:latest bash
+  374  mkdir ~/w205/flask-with-kafka/
+  375  cd ~/w205/flask-with-kafka/
+  376  ls
+  377  docker-compose up 0d
+  378  docker-compose up -d
+  379  docker-compose exec kafka kafka-topics --create --topic events --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  380  docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka/game_api_with_json_events.py flask run --host 0.0.0.0
+  381  history
+  382  nano game_api_with_json_events.py
+  383  rm game_api_with_json_events.py
+  384  nao game_api_with_json_events.pyc
+  385  nano game_api_with_json_events.pyc
+  386  rm game_api_with_json_events.pyc
+  387  ls
+  388  nano game_api_with_json_events.py
+  389  docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka/game_api_with_extended_json_events.py flask run --host 0.0.0.0
+  390  ls
+  391  nano game_api_with_json_events.py
+  392  nano game_api_with_extended_json_events.py
+  393  docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka/game_api_with_extended_json_events.py flask run --host 0.0.0.0
+  394  history
