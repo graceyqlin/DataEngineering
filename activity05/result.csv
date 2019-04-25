@@ -1,0 +1,7 @@
+
+trip_id,duration_sec,start_date,start_station_name,start_station_id,end_date,end_station_name,end_station_id,bike_number,zip_code,subscriber_type
+944732,2618,2015-09-24 17:22:00,Mezes,83,2015-09-24 18:06:00,Mezes,83,653,94063,Customer
+984595,5957,2015-10-25 18:12:00,Mezes,83,2015-10-25 19:51:00,Mezes,83,52,nil,Customer
+984596,5913,2015-10-25 18:13:00,Mezes,83,2015-10-25 19:51:00,Mezes,83,121,nil,Customer
+1129385,6079,2016-03-18 10:33:00,Mezes,83,2016-03-18 12:14:00,Mezes,83,208,94070,Customer
+1030383,5780,2015-12-06 10:52:00,Mezes,83,2015-12-06 12:28:00,Mezes,83,44,94064,Customer
